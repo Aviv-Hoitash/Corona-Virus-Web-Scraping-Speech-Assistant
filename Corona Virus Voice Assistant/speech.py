@@ -72,7 +72,6 @@ def get_audio():
 
 specific = False
 asking = True
-
 while asking: #runs forever until broken
     text = get_audio() #Listens for user speech
     print("I'm Listening")
@@ -111,6 +110,7 @@ while asking: #runs forever until broken
             print("hello, how are you")
 
         if "what is your name" in text.lower():
-            speak("My name is{}".format(WAKE.split[1::]))
-            print("My name is{}".format(WAKE.split[1::]))
-            
+            speak("My name is{}".format(WAKE.split()[1]))
+            print("My name is{}".format(WAKE.split()[1]))
+
+
